@@ -1,0 +1,70 @@
+# ═══ macOS ═══
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# ═══ Windows ═══
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+
+# ═══ Linux ═══
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ═══ Editors ═══
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.cursor/
+
+# ═══ Node / npm (in case you add tooling later) ═══
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+package-lock.json
+yarn.lock
+
+# ═══ Build output ═══
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# ═══ Environment / secrets ═══
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ═══ Logs ═══
+*.log
+logs/
+
+# ═══ Misc ═══
+*.bak
+*.tmp
+*.temp
