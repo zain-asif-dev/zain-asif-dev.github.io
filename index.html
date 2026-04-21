@@ -299,6 +299,53 @@ tailwind.config = {
   /* ═══ Mobile menu ═══ */
   .mobile-menu{ display: none; }
   .mobile-menu.open{ display: flex; }
+
+  /* ═══ Browser mockup frame ═══ */
+  .browser-mockup{
+    background: #1a1d28;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px -20px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.03);
+    transition: all .4s cubic-bezier(.4,0,.2,1);
+  }
+  .browser-mockup:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 35px 70px -20px rgba(99,102,241,.25), 0 0 0 1px rgba(129,140,248,.2);
+  }
+  .browser-header{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: linear-gradient(180deg, #2a2e3d, #1f222d);
+    border-bottom: 1px solid rgba(255,255,255,.05);
+  }
+  .traffic-lights{ display: flex; gap: 6px; }
+  .traffic-light{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+  }
+  .traffic-red{ background: #ff5f57; }
+  .traffic-yellow{ background: #febc2e; }
+  .traffic-green{ background: #28c840; }
+  .url-bar{
+    flex: 1;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 11px;
+    color: #94a3b8;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .url-bar i{ color: #64748b; font-size: 9px; }
 </style>
 </head>
 
@@ -951,18 +998,37 @@ tailwind.config = {
     <div class="absolute -top-20 -right-20 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-    <!-- Screenshots banner (top) -->
-    <div class="relative bg-slate-950/60 border-b border-white/5 p-4 md:p-6">
-      <div class="grid md:grid-cols-2 gap-4">
-        <div class="relative rounded-xl overflow-hidden border border-white/10 shadow-xl shadow-black/40 group-hover:border-indigo-500/30 transition-colors">
+    <!-- Screenshots banner (top) with browser mockups -->
+    <div class="relative bg-gradient-to-b from-slate-950/80 to-slate-950/40 border-b border-white/5 p-6 md:p-10 overflow-hidden">
+      <div class="absolute inset-0 opacity-40" style="background-image: radial-gradient(circle at 30% 30%, rgba(99,102,241,.15), transparent 50%), radial-gradient(circle at 70% 70%, rgba(245,158,11,.1), transparent 50%);"></div>
+
+      <div class="relative grid md:grid-cols-2 gap-5 md:gap-6">
+        <div class="browser-mockup">
+          <div class="browser-header">
+            <div class="traffic-lights">
+              <span class="traffic-light traffic-red"></span>
+              <span class="traffic-light traffic-yellow"></span>
+              <span class="traffic-light traffic-green"></span>
+            </div>
+            <div class="url-bar"><i class="fa-solid fa-lock"></i>sales.support</div>
+          </div>
           <img src="./assets/projects/sales-support-landing.png"
-               class="w-full h-full object-cover object-top block aspect-[16/10]"
+               class="w-full block"
                alt="Sales Support landing page with AI Repricer"
                loading="lazy">
         </div>
-        <div class="relative rounded-xl overflow-hidden border border-white/10 shadow-xl shadow-black/40 group-hover:border-indigo-500/30 transition-colors">
+
+        <div class="browser-mockup">
+          <div class="browser-header">
+            <div class="traffic-lights">
+              <span class="traffic-light traffic-red"></span>
+              <span class="traffic-light traffic-yellow"></span>
+              <span class="traffic-light traffic-green"></span>
+            </div>
+            <div class="url-bar"><i class="fa-solid fa-lock"></i>sales.support/features</div>
+          </div>
           <img src="./assets/projects/sales-support-features.png"
-               class="w-full h-full object-cover object-top block aspect-[16/10]"
+               class="w-full block"
                alt="Sales Support features: Catalog Analyzer, Vendors CRM, Team Task Manager"
                loading="lazy">
         </div>
