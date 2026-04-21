@@ -161,6 +161,10 @@ This repo is set up as a GitHub Pages site at
     <td><a href="https://g.dev/zain-asif-dev">g.dev/zain-asif-dev</a></td>
   </tr>
   <tr>
+    <td>Upwork</td>
+    <td><a href="https://www.upwork.com/freelancers/~01bb9c98d5de464f5d">View profile</a></td>
+  </tr>
+  <tr>
     <td>Location</td>
     <td>Faisalabad, Pakistan &middot; Remote &amp; Global</td>
   </tr>

@@ -445,6 +445,10 @@ tailwind.config = {
          class="px-6 py-3 rounded-xl border border-white/15 hover:bg-white/5 hover:border-white/25 transition flex items-center gap-2">
         <i class="fa-brands fa-linkedin"></i>LinkedIn
       </a>
+      <a href="https://www.upwork.com/freelancers/~01bb9c98d5de464f5d" target="_blank" rel="noreferrer"
+         class="px-6 py-3 rounded-xl border border-white/15 hover:bg-white/5 hover:border-white/25 transition flex items-center gap-2">
+        <img src="./assets/tools/upwork.svg" class="w-4 h-4" alt="Upwork" style="filter: invert(1)">Upwork
+      </a>
       <a href="https://g.dev/zain-asif-dev" target="_blank" rel="noreferrer"
          class="px-6 py-3 rounded-xl border border-white/15 hover:bg-white/5 hover:border-white/25 transition flex items-center gap-2">
         <img src="./assets/tools/google-dev.png" class="w-4 h-4" alt="Google Developer">Google Dev
@@ -1002,7 +1006,7 @@ tailwind.config = {
       <div class="absolute inset-0 opacity-40" style="background-image: radial-gradient(circle at 30% 30%, rgba(99,102,241,.15), transparent 50%), radial-gradient(circle at 70% 70%, rgba(245,158,11,.1), transparent 50%);"></div>
 
       <div class="relative grid md:grid-cols-2 gap-5 md:gap-6">
-        <a href="https://sales.support" target="_blank" rel="noreferrer" class="browser-mockup block">
+        <div class="browser-mockup">
           <div class="browser-header">
             <div class="traffic-lights">
               <span class="traffic-light traffic-red"></span>
@@ -1015,9 +1019,9 @@ tailwind.config = {
                class="w-full block"
                alt="Sales Support landing page with AI Repricer"
                loading="lazy">
-        </a>
+        </div>
 
-        <a href="https://sales.support" target="_blank" rel="noreferrer" class="browser-mockup block">
+        <div class="browser-mockup">
           <div class="browser-header">
             <div class="traffic-lights">
               <span class="traffic-light traffic-red"></span>
@@ -1030,7 +1034,7 @@ tailwind.config = {
                class="w-full block"
                alt="Sales Support features: Catalog Analyzer, Vendors CRM, Team Task Manager"
                loading="lazy">
-        </a>
+        </div>
       </div>
     </div>
 
@@ -1042,12 +1046,7 @@ tailwind.config = {
             <i class="fa-solid fa-warehouse text-white text-lg"></i>
           </div>
           <div>
-            <a href="https://sales.support" target="_blank" rel="noreferrer" class="inline-block group/title">
-              <h3 class="font-bold text-white text-2xl md:text-3xl leading-tight flex items-center gap-2 flex-wrap hover:text-indigo-300 transition-colors">
-                Sales Support
-                <i class="fa-solid fa-arrow-up-right-from-square text-sm text-slate-500 group-hover/title:text-indigo-300 transition-colors"></i>
-              </h3>
-            </a>
+            <h3 class="font-bold text-white text-2xl md:text-3xl leading-tight">Sales Support</h3>
             <p class="text-xs text-slate-500 mt-1">
               <span class="text-indigo-300">sales.support</span> &middot; Nov 2021 &ndash; Jun 2024 &middot; Team Lead
             </p>
@@ -1100,16 +1099,6 @@ tailwind.config = {
         </div>
       </div>
 
-      <div class="mt-6 pt-5 border-t border-white/5 flex flex-wrap items-center gap-4 text-sm">
-        <a href="https://sales.support" target="_blank" rel="noreferrer"
-           class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition shadow-lg shadow-indigo-500/25">
-          Visit sales.support <i class="fa-solid fa-arrow-right text-xs"></i>
-        </a>
-        <a href="https://www.upwork.com/freelancers/~01bb9c98d5de464f5d?p=1814340014335217664" target="_blank" rel="noreferrer"
-           class="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-indigo-400 transition">
-          <i class="fa-solid fa-circle-info"></i>View on Upwork
-        </a>
-      </div>
     </div>
   </div>
 
@@ -1157,17 +1146,14 @@ tailwind.config = {
       </div>
     </div>
 
-    <a href="https://app.bluudo.com" target="_blank" rel="noreferrer" class="glass project-card rounded-3xl p-8 block">
+    <div class="glass project-card rounded-3xl p-8">
       <div class="flex items-start justify-between mb-5">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/25">
           <i class="fa-solid fa-cart-shopping text-white text-lg"></i>
         </div>
         <span class="text-xs text-slate-500 bg-white/5 px-2.5 py-1 rounded-full">Qbatch</span>
       </div>
-      <h3 class="font-bold text-white text-xl mb-2 flex items-center gap-2">
-        Bluudo
-        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
-      </h3>
+      <h3 class="font-bold text-white text-xl mb-2">Bluudo</h3>
       <p class="text-xs text-slate-500 mb-3">Dec 2023 &ndash; May 2025</p>
       <p class="text-sm text-slate-400 leading-relaxed mb-5">
         Rebuilt the project from single-item to multi-item ordering &mdash; effectively a full rewrite.
@@ -1179,8 +1165,7 @@ tailwind.config = {
         <span class="chip px-2 py-0.5 rounded-full text-slate-500">PostgreSQL</span>
         <span class="chip px-2 py-0.5 rounded-full text-slate-500">Node.js</span>
       </div>
-      <p class="mt-4 text-xs text-indigo-400 font-semibold flex items-center gap-1">Visit app.bluudo.com <i class="fa-solid fa-arrow-right text-[10px]"></i></p>
-    </a>
+    </div>
 
     <div class="glass project-card rounded-3xl p-8">
       <div class="flex items-start justify-between mb-5">
@@ -1560,6 +1545,9 @@ tailwind.config = {
         </a>
         <a href="https://github.com/zain-asif-dev" target="_blank" rel="noreferrer" class="social-btn text-slate-400 hover:text-white" title="GitHub">
           <i class="fa-brands fa-github text-xl"></i>
+        </a>
+        <a href="https://www.upwork.com/freelancers/~01bb9c98d5de464f5d" target="_blank" rel="noreferrer" class="social-btn text-slate-400 hover:text-emerald-400" title="Upwork">
+          <img src="./assets/tools/upwork.svg" class="w-5 h-5" alt="Upwork" style="filter: invert(1)">
         </a>
         <a href="https://g.dev/zain-asif-dev" target="_blank" rel="noreferrer" class="social-btn text-slate-400 hover:text-white" title="Google Developer Program">
           <img src="./assets/tools/google-dev.png" class="w-5 h-5" alt="Google Developer Program">
