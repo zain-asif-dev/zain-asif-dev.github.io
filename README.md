@@ -76,8 +76,7 @@ Portfolio/
     ├── projects/               # Project screenshots
     │   ├── google-dev-badges.png
     │   ├── sales-support-landing.png
-    │   ├── sales-support-features.png
-    │   └── sales-support-upwork.png
+    │   └── sales-support-features.png
     └── tools/                  # 44 tech stack icons (SVG/PNG)
 ```
 
