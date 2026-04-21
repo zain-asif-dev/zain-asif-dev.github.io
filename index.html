@@ -993,8 +993,7 @@ tailwind.config = {
   </div>
 
   <!-- Featured Project: Sales Support -->
-  <a href="https://sales.support" target="_blank" rel="noreferrer"
-     class="glass-strong project-card rounded-3xl overflow-hidden block mb-6 group relative">
+  <div class="glass-strong project-card rounded-3xl overflow-hidden mb-6 group relative">
     <div class="absolute -top-20 -right-20 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -1003,7 +1002,7 @@ tailwind.config = {
       <div class="absolute inset-0 opacity-40" style="background-image: radial-gradient(circle at 30% 30%, rgba(99,102,241,.15), transparent 50%), radial-gradient(circle at 70% 70%, rgba(245,158,11,.1), transparent 50%);"></div>
 
       <div class="relative grid md:grid-cols-2 gap-5 md:gap-6">
-        <div class="browser-mockup">
+        <a href="https://sales.support" target="_blank" rel="noreferrer" class="browser-mockup block">
           <div class="browser-header">
             <div class="traffic-lights">
               <span class="traffic-light traffic-red"></span>
@@ -1016,9 +1015,9 @@ tailwind.config = {
                class="w-full block"
                alt="Sales Support landing page with AI Repricer"
                loading="lazy">
-        </div>
+        </a>
 
-        <div class="browser-mockup">
+        <a href="https://sales.support" target="_blank" rel="noreferrer" class="browser-mockup block">
           <div class="browser-header">
             <div class="traffic-lights">
               <span class="traffic-light traffic-red"></span>
@@ -1031,7 +1030,7 @@ tailwind.config = {
                class="w-full block"
                alt="Sales Support features: Catalog Analyzer, Vendors CRM, Team Task Manager"
                loading="lazy">
-        </div>
+        </a>
       </div>
     </div>
 
@@ -1043,10 +1042,12 @@ tailwind.config = {
             <i class="fa-solid fa-warehouse text-white text-lg"></i>
           </div>
           <div>
-            <h3 class="font-bold text-white text-2xl md:text-3xl leading-tight flex items-center gap-2 flex-wrap">
-              Sales Support
-              <i class="fa-solid fa-arrow-up-right-from-square text-sm text-slate-500"></i>
-            </h3>
+            <a href="https://sales.support" target="_blank" rel="noreferrer" class="inline-block group/title">
+              <h3 class="font-bold text-white text-2xl md:text-3xl leading-tight flex items-center gap-2 flex-wrap hover:text-indigo-300 transition-colors">
+                Sales Support
+                <i class="fa-solid fa-arrow-up-right-from-square text-sm text-slate-500 group-hover/title:text-indigo-300 transition-colors"></i>
+              </h3>
+            </a>
             <p class="text-xs text-slate-500 mt-1">
               <span class="text-indigo-300">sales.support</span> &middot; Nov 2021 &ndash; Jun 2024 &middot; Team Lead
             </p>
@@ -1100,17 +1101,17 @@ tailwind.config = {
       </div>
 
       <div class="mt-6 pt-5 border-t border-white/5 flex flex-wrap items-center gap-4 text-sm">
-        <span class="text-indigo-400 font-semibold inline-flex items-center gap-1.5 group-hover:gap-2 transition-all">
+        <a href="https://sales.support" target="_blank" rel="noreferrer"
+           class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition shadow-lg shadow-indigo-500/25">
           Visit sales.support <i class="fa-solid fa-arrow-right text-xs"></i>
-        </span>
+        </a>
         <a href="https://www.upwork.com/freelancers/~01bb9c98d5de464f5d?p=1814340014335217664" target="_blank" rel="noreferrer"
-           class="text-xs text-slate-500 hover:text-indigo-400 transition inline-flex items-center gap-1"
-           onclick="event.stopPropagation()">
+           class="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-indigo-400 transition">
           <i class="fa-solid fa-circle-info"></i>View on Upwork
         </a>
       </div>
     </div>
-  </a>
+  </div>
 
   <div class="grid md:grid-cols-2 gap-6">
 
