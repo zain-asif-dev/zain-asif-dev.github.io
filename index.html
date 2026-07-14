@@ -9,8 +9,13 @@
 
 <meta property="og:title" content="Zain Asif | AI Engineer & Senior Full Stack Developer" />
 <meta property="og:description" content="AI Engineer & Senior Full Stack Developer specializing in LLM optimization, RLHF, and scalable software systems." />
-<meta property="og:image" content="./assets/picture.png" />
+<meta property="og:image" content="https://zain-asif-dev.github.io/assets/picture.png" />
+<meta property="og:url" content="https://zain-asif-dev.github.io/" />
 <meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Zain Asif | AI Engineer & Senior Full Stack Developer" />
+<meta name="twitter:description" content="AI Engineer & Senior Full Stack Developer specializing in LLM optimization, RLHF, and scalable software systems." />
+<meta name="twitter:image" content="https://zain-asif-dev.github.io/assets/picture.png" />
 
 <title>Zain Asif | AI Engineer & Senior Full Stack Developer</title>
 
@@ -43,6 +48,16 @@ tailwind.config = {
 
   html { scroll-behavior: smooth; }
   body{ background: var(--bg); }
+
+  /* Keep anchored section headings clear of the sticky header */
+  section[id]{ scroll-margin-top: 88px; }
+
+  /* Keyboard focus on the dark theme */
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid #818cf8;
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
 
   /* ═══ Scrollbar ═══ */
   ::-webkit-scrollbar{ width: 10px; }
@@ -246,6 +261,8 @@ tailwind.config = {
     transition: width .3s ease;
   }
   .nav-link:hover::after{ width: 100%; }
+  .nav-link.active{ color: #fff; }
+  .nav-link.active::after{ width: 100%; }
 
   /* ═══ Section header accent ═══ */
   .section-label{
@@ -346,6 +363,14 @@ tailwind.config = {
     gap: 6px;
   }
   .url-bar i{ color: #64748b; font-size: 9px; }
+
+  /* ═══ Reduced motion ═══ */
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    .marquee-track, .float-anim, .pulse-glow, .gradient-anim, .animate-ping{ animation: none !important; }
+    .fade-in{ opacity: 1; transform: none; transition: none; }
+    .chip, .exp-card, .project-card, .skill-card, .stat-card, .social-btn, .browser-mockup, .nav-link::after{ transition: none; }
+  }
 </style>
 </head>
 
@@ -361,6 +386,7 @@ tailwind.config = {
 </div>
 
 <!-- ═══ Header ═══ -->
+<a href="#top" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:px-4 focus:py-2 focus:rounded-xl focus:bg-indigo-600 focus:text-white focus:text-sm focus:font-semibold">Skip to content</a>
 <header class="sticky top-0 z-50 bg-black/70 backdrop-blur-xl border-b border-white/5">
   <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
     <a href="#top" class="flex items-center gap-2">
@@ -368,33 +394,38 @@ tailwind.config = {
       <span class="hidden sm:block text-sm font-semibold text-white">Zain Asif</span>
     </a>
 
-    <div class="hidden md:flex gap-8 text-sm text-slate-400">
+    <div class="hidden lg:flex gap-6 text-sm text-slate-400">
       <a href="#about" class="nav-link hover:text-white">About</a>
       <a href="#skills" class="nav-link hover:text-white">Skills</a>
       <a href="#experience" class="nav-link hover:text-white">Experience</a>
       <a href="#projects" class="nav-link hover:text-white">Projects</a>
+      <a href="#tools" class="nav-link hover:text-white">Tools</a>
       <a href="#education" class="nav-link hover:text-white">Education</a>
       <a href="#certifications" class="nav-link hover:text-white">Certifications</a>
       <a href="#contact" class="nav-link hover:text-white">Contact</a>
     </div>
 
-    <a href="#contact" class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-sm font-semibold transition shadow-lg shadow-indigo-500/25">
-      Hire Me
-    </a>
+    <div class="flex items-center gap-4">
+      <a href="#contact" class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-sm font-semibold transition shadow-lg shadow-indigo-500/25">
+        Hire Me
+      </a>
 
-    <button id="mobile-toggle" class="md:hidden text-white text-xl" aria-label="Toggle menu">
-      <i class="fa-solid fa-bars"></i>
-    </button>
+      <button id="mobile-toggle" class="lg:hidden text-white text-xl w-10 h-10 flex items-center justify-center" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
   </nav>
 
-  <div id="mobile-menu" class="mobile-menu md:hidden flex-col px-6 py-4 border-t border-white/5 bg-black/80 backdrop-blur-xl">
-    <a href="#about" class="py-2 text-slate-300 hover:text-white">About</a>
-    <a href="#skills" class="py-2 text-slate-300 hover:text-white">Skills</a>
-    <a href="#experience" class="py-2 text-slate-300 hover:text-white">Experience</a>
-    <a href="#projects" class="py-2 text-slate-300 hover:text-white">Projects</a>
-    <a href="#education" class="py-2 text-slate-300 hover:text-white">Education</a>
-    <a href="#certifications" class="py-2 text-slate-300 hover:text-white">Certifications</a>
-    <a href="#contact" class="py-2 text-slate-300 hover:text-white">Contact</a>
+  <div id="mobile-menu" class="mobile-menu lg:hidden flex-col px-6 py-4 border-t border-white/5 bg-black/80 backdrop-blur-xl">
+    <a href="#about" class="py-2.5 text-slate-300 hover:text-white">About</a>
+    <a href="#skills" class="py-2.5 text-slate-300 hover:text-white">Skills</a>
+    <a href="#experience" class="py-2.5 text-slate-300 hover:text-white">Experience</a>
+    <a href="#projects" class="py-2.5 text-slate-300 hover:text-white">Projects</a>
+    <a href="#tools" class="py-2.5 text-slate-300 hover:text-white">Tools</a>
+    <a href="#education" class="py-2.5 text-slate-300 hover:text-white">Education</a>
+    <a href="#certifications" class="py-2.5 text-slate-300 hover:text-white">Certifications</a>
+    <a href="#contact" class="py-2.5 text-slate-300 hover:text-white">Contact</a>
+    <a href="#contact" class="sm:hidden mt-3 inline-flex justify-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-sm font-semibold shadow-lg shadow-indigo-500/25">Hire Me</a>
   </div>
 </header>
 
@@ -470,6 +501,7 @@ tailwind.config = {
       </div>
       <img src="./assets/picture.png"
            class="relative w-72 md:w-80 rounded-3xl float-anim"
+           width="1728" height="1590" fetchpriority="high"
            alt="Zain Asif">
       <!-- Floating badges -->
       <div class="absolute -top-3 -right-3 glass-strong rounded-2xl px-4 py-2 flex items-center gap-2 text-sm">
@@ -499,12 +531,12 @@ tailwind.config = {
       <img class="company-logo-marquee" src="./assets/companies/qbatch.png" alt="Qbatch" title="Qbatch">
       <img class="company-logo-marquee" src="./assets/companies/fiverr.png" alt="Fiverr" title="Fiverr">
 
-      <img class="company-logo-marquee" src="./assets/companies/mercor.png" alt="Mercor" title="Mercor">
-      <img class="company-logo-marquee" src="./assets/companies/turing.png" alt="Turing" title="Turing">
-      <img class="company-logo-marquee" src="./assets/companies/superannotate.png" alt="SuperAnnotate" title="SuperAnnotate">
-      <img class="company-logo-marquee" src="./assets/companies/micro1.png" alt="micro1" title="micro1">
-      <img class="company-logo-marquee" src="./assets/companies/qbatch.png" alt="Qbatch" title="Qbatch">
-      <img class="company-logo-marquee" src="./assets/companies/fiverr.png" alt="Fiverr" title="Fiverr">
+      <img class="company-logo-marquee" src="./assets/companies/mercor.png" alt="" aria-hidden="true" title="Mercor">
+      <img class="company-logo-marquee" src="./assets/companies/turing.png" alt="" aria-hidden="true" title="Turing">
+      <img class="company-logo-marquee" src="./assets/companies/superannotate.png" alt="" aria-hidden="true" title="SuperAnnotate">
+      <img class="company-logo-marquee" src="./assets/companies/micro1.png" alt="" aria-hidden="true" title="micro1">
+      <img class="company-logo-marquee" src="./assets/companies/qbatch.png" alt="" aria-hidden="true" title="Qbatch">
+      <img class="company-logo-marquee" src="./assets/companies/fiverr.png" alt="" aria-hidden="true" title="Fiverr">
     </div>
   </div>
 </section>
@@ -630,14 +662,14 @@ tailwind.config = {
         Languages
       </h3>
       <div class="flex flex-wrap gap-2 text-sm">
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/python-original.svg" class="tool-logo-sm" alt="">Python</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/go-original-wordmark.svg" class="tool-logo-sm" alt="">Go</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/javascript-original.svg" class="tool-logo-sm" alt="">JavaScript</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/typescript-original.svg" class="tool-logo-sm" alt="">TypeScript</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/ruby-original.svg" class="tool-logo-sm" alt="">Ruby</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/php-original.svg" class="tool-logo-sm" alt="">PHP</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/java-original.svg" class="tool-logo-sm" alt="">Java</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/cplusplus-original.svg" class="tool-logo-sm" alt="">C/C++</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/python-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Python</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/go-original-wordmark.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Go</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/javascript-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">JavaScript</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/typescript-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">TypeScript</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/ruby-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Ruby</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/php-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">PHP</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/java-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Java</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/cplusplus-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">C/C++</span>
         <span class="chip px-3 py-1.5 rounded-full">SQL</span>
       </div>
     </div>
@@ -650,28 +682,47 @@ tailwind.config = {
         Frameworks
       </h3>
       <div class="flex flex-wrap gap-2 text-sm">
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/django-plain.svg" class="tool-logo-sm" alt="">Django</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/flask-original.svg" class="tool-logo-sm" alt="" style="filter: invert(1)">Flask</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/nodejs-original.svg" class="tool-logo-sm" alt="">Node.js</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/react-original.svg" class="tool-logo-sm" alt="">React.js</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/rails-plain.svg" class="tool-logo-sm" alt="">Ruby on Rails</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/laravel-original.svg" class="tool-logo-sm" alt="">Laravel</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/django-plain.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Django</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/flask-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="" style="filter: invert(1)">Flask</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/nodejs-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Node.js</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/react-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">React.js</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/rails-plain.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Ruby on Rails</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/laravel-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Laravel</span>
       </div>
     </div>
 
-    <div class="glass skill-card rounded-3xl p-7">
-      <h3 class="font-semibold text-white mb-5 flex items-center gap-3">
-        <span class="w-9 h-9 rounded-lg bg-pink-500/15 flex items-center justify-center">
-          <i class="fa-solid fa-palette text-pink-400 text-sm"></i>
-        </span>
-        Frontend &amp; UI
-      </h3>
-      <div class="flex flex-wrap gap-2 text-sm">
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/html5-original.svg" class="tool-logo-sm" alt="">HTML5</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/css3-original.svg" class="tool-logo-sm" alt="">CSS / SCSS</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/bootstrap-original.svg" class="tool-logo-sm" alt="">Bootstrap</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/tailwindcss-original.svg" class="tool-logo-sm" alt="">Tailwind</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/figma-original.svg" class="tool-logo-sm" alt="">Figma</span>
+    <div class="flex flex-col gap-6">
+      <div class="glass skill-card rounded-3xl p-7 flex-1">
+        <h3 class="font-semibold text-white mb-5 flex items-center gap-3">
+          <span class="w-9 h-9 rounded-lg bg-pink-500/15 flex items-center justify-center">
+            <i class="fa-solid fa-palette text-pink-400 text-sm"></i>
+          </span>
+          Frontend &amp; UI
+        </h3>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/html5-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">HTML5</span>
+          <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/css3-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">CSS / SCSS</span>
+          <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/bootstrap-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Bootstrap</span>
+          <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/tailwindcss-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Tailwind</span>
+          <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/figma-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Figma</span>
+        </div>
+      </div>
+
+      <div class="glass skill-card rounded-3xl p-7 flex-1">
+        <h3 class="font-semibold text-white mb-5 flex items-center gap-3">
+          <span class="w-9 h-9 rounded-lg bg-emerald-500/15 flex items-center justify-center">
+            <i class="fa-solid fa-database text-emerald-400 text-sm"></i>
+          </span>
+          Databases
+        </h3>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/postgresql-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">PostgreSQL</span>
+          <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/mysql-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">MySQL</span>
+          <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/microsoftsqlserver-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">SQL Server</span>
+          <span class="chip px-3 py-1.5 rounded-full">Database Design</span>
+          <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/sequelize-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Sequelize</span>
+          <span class="chip px-3 py-1.5 rounded-full">ActiveRecord</span>
+        </div>
       </div>
     </div>
 
@@ -698,23 +749,6 @@ tailwind.config = {
         <span class="chip px-3 py-1.5 rounded-full">Agentic AI</span>
         <span class="chip px-3 py-1.5 rounded-full">Transformer Models</span>
         <span class="chip px-3 py-1.5 rounded-full">Mixture of Experts</span>
-      </div>
-    </div>
-
-    <div class="glass skill-card rounded-3xl p-7">
-      <h3 class="font-semibold text-white mb-5 flex items-center gap-3">
-        <span class="w-9 h-9 rounded-lg bg-emerald-500/15 flex items-center justify-center">
-          <i class="fa-solid fa-database text-emerald-400 text-sm"></i>
-        </span>
-        Databases
-      </h3>
-      <div class="flex flex-wrap gap-2 text-sm">
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/postgresql-original.svg" class="tool-logo-sm" alt="">PostgreSQL</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/mysql-original.svg" class="tool-logo-sm" alt="">MySQL</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/microsoftsqlserver-original.svg" class="tool-logo-sm" alt="">SQL Server</span>
-        <span class="chip px-3 py-1.5 rounded-full">Database Design</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/sequelize-original.svg" class="tool-logo-sm" alt="">Sequelize</span>
-        <span class="chip px-3 py-1.5 rounded-full">ActiveRecord</span>
       </div>
     </div>
 
@@ -753,12 +787,12 @@ tailwind.config = {
         Cloud &amp; DevOps
       </h3>
       <div class="flex flex-wrap gap-2 text-sm">
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/googlecloud-original.svg" class="tool-logo-sm" alt="">GCP</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/azure-original.svg" class="tool-logo-sm" alt="">Azure</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/docker-original.svg" class="tool-logo-sm" alt="">Docker</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/heroku-original.svg" class="tool-logo-sm" alt="">Heroku</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/nginx-original.svg" class="tool-logo-sm" alt="">Nginx</span>
-        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/linux-original.svg" class="tool-logo-sm" alt="">Linux</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/googlecloud-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">GCP</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/azure-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Azure</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/docker-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Docker</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/heroku-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Heroku</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/nginx-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Nginx</span>
+        <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/linux-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Linux</span>
         <span class="chip px-3 py-1.5 rounded-full">Microservices</span>
         <span class="chip px-3 py-1.5 rounded-full">CI/CD</span>
       </div>
@@ -822,7 +856,7 @@ tailwind.config = {
     <div class="glass exp-card rounded-3xl p-8">
       <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
         <div class="flex items-start gap-4">
-          <img src="./assets/companies/mercor.png" alt="Mercor" class="company-logo-exp">
+          <img src="./assets/companies/mercor.png" alt="Mercor" class="company-logo-exp" loading="lazy" decoding="async">
           <div>
             <h3 class="text-xl font-bold text-white">AI Engineer / Data Annotator</h3>
             <p class="text-indigo-400 font-semibold mt-0.5">Mercor</p>
@@ -857,7 +891,7 @@ tailwind.config = {
     <div class="glass exp-card rounded-3xl p-8">
       <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
         <div class="flex items-start gap-4">
-          <img src="./assets/companies/turing.png" alt="Turing" class="company-logo-exp">
+          <img src="./assets/companies/turing.png" alt="Turing" class="company-logo-exp" loading="lazy" decoding="async">
           <div>
             <h3 class="text-xl font-bold text-white">Data Engineer / Software Developer</h3>
             <p class="text-indigo-400 font-semibold mt-0.5">Turing</p>
@@ -890,7 +924,7 @@ tailwind.config = {
     <div class="glass exp-card rounded-3xl p-8">
       <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
         <div class="flex items-start gap-4">
-          <img src="./assets/companies/superannotate.png" alt="SuperAnnotate" class="company-logo-exp">
+          <img src="./assets/companies/superannotate.png" alt="SuperAnnotate" class="company-logo-exp" loading="lazy" decoding="async">
           <div>
             <h3 class="text-xl font-bold text-white">Data Annotation Engineer</h3>
             <p class="text-indigo-400 font-semibold mt-0.5">SuperAnnotate</p>
@@ -918,7 +952,7 @@ tailwind.config = {
     <div class="glass exp-card rounded-3xl p-8">
       <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
         <div class="flex items-start gap-4">
-          <img src="./assets/companies/qbatch.png" alt="Qbatch" class="company-logo-exp">
+          <img src="./assets/companies/qbatch.png" alt="Qbatch" class="company-logo-exp" loading="lazy" decoding="async">
           <div>
             <h3 class="text-xl font-bold text-white">Full Stack Developer</h3>
             <p class="text-indigo-400 font-semibold mt-0.5">Qbatch</p>
@@ -955,7 +989,7 @@ tailwind.config = {
     <div class="glass exp-card rounded-3xl p-8">
       <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
         <div class="flex items-start gap-4">
-          <img src="./assets/companies/fiverr.png" alt="Fiverr" class="company-logo-exp">
+          <img src="./assets/companies/fiverr.png" alt="Fiverr" class="company-logo-exp" loading="lazy" decoding="async">
           <div>
             <h3 class="text-xl font-bold text-white">Professional Freelancer</h3>
             <p class="text-indigo-400 font-semibold mt-0.5">Fiverr</p>
@@ -1246,12 +1280,12 @@ tailwind.config = {
         Development
       </h3>
       <div class="space-y-4 text-sm">
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/vscode-original.svg" alt="VS Code">VS Code</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/cursor.svg" alt="Cursor" style="filter: invert(1)">Cursor</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/github-original.svg" alt="GitHub" style="filter: invert(1)">GitHub</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/git-original.svg" alt="Git">Git</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/docker-original.svg" alt="Docker">Docker</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/postman-original.svg" alt="Postman">Postman</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/vscode-original.svg" alt="VS Code">VS Code</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/cursor.svg" alt="Cursor" style="filter: invert(1)">Cursor</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/github-original.svg" alt="GitHub" style="filter: invert(1)">GitHub</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/git-original.svg" alt="Git">Git</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/docker-original.svg" alt="Docker">Docker</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/postman-original.svg" alt="Postman">Postman</div>
       </div>
     </div>
 
@@ -1263,10 +1297,10 @@ tailwind.config = {
         AI Platforms
       </h3>
       <div class="space-y-4 text-sm">
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/anthropic.svg" alt="Anthropic" style="filter: invert(1)">Claude / Anthropic</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/openai.svg" alt="OpenAI" style="filter: invert(1)">OpenAI / ChatGPT</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/googlegemini.svg" alt="Google Gemini" style="filter: invert(1)">Google Gemini</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/huggingface.svg" alt="Hugging Face">Hugging Face</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/anthropic.svg" alt="Anthropic" style="filter: invert(1)">Claude / Anthropic</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/openai.svg" alt="OpenAI" style="filter: invert(1)">OpenAI / ChatGPT</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/googlegemini.svg" alt="Google Gemini" style="filter: invert(1)">Google Gemini</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/huggingface.svg" alt="Hugging Face">Hugging Face</div>
       </div>
     </div>
 
@@ -1278,11 +1312,11 @@ tailwind.config = {
         Productivity
       </h3>
       <div class="space-y-4 text-sm">
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/slack-original.svg" alt="Slack">Slack</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/jira-original.svg" alt="Jira">Jira</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/clickup.svg" alt="ClickUp" style="filter: invert(1)">ClickUp</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/notion.svg" alt="Notion" style="filter: invert(1)">Notion</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" src="./assets/tools/figma-original.svg" alt="Figma">Figma</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/slack-original.svg" alt="Slack">Slack</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/jira-original.svg" alt="Jira">Jira</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/clickup.svg" alt="ClickUp" style="filter: invert(1)">ClickUp</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/notion.svg" alt="Notion" style="filter: invert(1)">Notion</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/figma-original.svg" alt="Figma">Figma</div>
       </div>
     </div>
 
@@ -1366,7 +1400,7 @@ tailwind.config = {
         </div>
         <div class="flex items-start gap-4 mb-4">
           <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center flex-shrink-0 p-2">
-            <img src="./assets/companies/micro1.png" class="w-full h-full object-contain" alt="micro1">
+            <img src="./assets/companies/micro1.png" class="w-full h-full object-contain" loading="lazy" decoding="async" alt="micro1">
           </div>
           <div class="flex-1 min-w-0">
             <h3 class="font-bold text-white text-lg md:text-xl leading-tight">Certified Data Engineer</h3>
@@ -1388,6 +1422,7 @@ tailwind.config = {
         <div class="absolute -inset-2 bg-gradient-to-br from-emerald-500/20 to-indigo-500/20 rounded-2xl blur-xl"></div>
         <img src="./assets/certificates/micro1-data-engineer.jpg"
              class="relative w-full rounded-xl border border-white/10 shadow-2xl"
+             loading="lazy" decoding="async"
              alt="micro1 Data Engineer Certificate">
       </div>
     </div>
@@ -1414,7 +1449,7 @@ tailwind.config = {
     <a href="https://www.linkedin.com/learning/certificates/c671ee762afa38bdc1957ff1980a570c1072884c836a9547dfe1671b9f93840a" target="_blank" rel="noreferrer" class="glass project-card rounded-3xl p-6 block">
       <div class="flex items-start gap-4 mb-4">
         <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-yellow-400 to-amber-500 flex items-center justify-center flex-shrink-0">
-          <img src="./assets/tools/javascript-original.svg" class="w-7 h-7" alt="JavaScript">
+          <img src="./assets/tools/javascript-original.svg" class="w-7 h-7" loading="lazy" decoding="async" alt="JavaScript">
         </div>
         <div class="flex-1 min-w-0">
           <h3 class="font-bold text-white text-sm leading-tight">Learning Functional Programming with JavaScript ES6+</h3>
@@ -1456,7 +1491,7 @@ tailwind.config = {
 
       <div class="relative grid md:grid-cols-[auto_1fr_auto] gap-6 items-start">
         <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center flex-shrink-0 p-2">
-          <img src="./assets/tools/google-dev.png" class="w-full h-full object-contain" alt="Google Developer Program">
+          <img src="./assets/tools/google-dev.png" class="w-full h-full object-contain" loading="lazy" decoding="async" alt="Google Developer Program">
         </div>
 
         <div class="flex-1 min-w-0">
@@ -1502,6 +1537,7 @@ tailwind.config = {
         <div class="absolute -inset-2 bg-gradient-to-br from-blue-500/20 to-red-500/20 rounded-2xl blur-xl"></div>
         <img src="./assets/certificates/google-developer-profile.png"
              class="relative w-full rounded-xl border border-white/10 shadow-2xl"
+             loading="lazy" decoding="async"
              alt="Google Developer Program profile showing earned badges">
       </div>
     </a>
@@ -1582,11 +1618,30 @@ tailwind.config = {
 
   const mobileToggle = document.getElementById('mobile-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
+  const setMenu = (open) => {
+    mobileMenu.classList.toggle('open', open);
+    mobileToggle.setAttribute('aria-expanded', String(open));
+    mobileToggle.querySelector('i').className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+  };
   mobileToggle?.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
+    setMenu(!mobileMenu.classList.contains('open'));
   });
   mobileMenu?.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    a.addEventListener('click', () => setMenu(false));
+  });
+
+  // Highlight the nav link of the section currently in view
+  const navLinks = document.querySelectorAll('.nav-link');
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + entry.target.id));
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  navLinks.forEach(l => {
+    const section = document.getElementById(l.getAttribute('href').slice(1));
+    if (section) spy.observe(section);
   });
 
   const observer = new IntersectionObserver((entries) => {
