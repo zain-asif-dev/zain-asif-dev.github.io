@@ -20,13 +20,14 @@ AI/ML, LLM optimization, RLHF, and production-grade full-stack systems.
 
 Personal portfolio for [Zain Asif](https://linkedin.com/in/zain-asif-dev) &mdash; a
 full-stack engineer with deep expertise in Python, AI/ML, and scalable software systems.
-Delivered projects across E-commerce, Healthcare, Retail, and AI research.
+Delivered projects across E-commerce, Healthcare, Retail, HRtech, and AI research.
 
 **Highlights:**
 
 -  AI/ML: RLHF, SFT, Agentic workflows, LLAMA model accuracy from **18% to 70%**
 -  Featured build: [sales.support](https://sales.support) &mdash; AI Repricer &amp; WMS platform
 -  Certified Data Engineer by **micro1** + Google Developer Program member (**14+ badges**)
+-  Additional credentials from **OpenAI**, **Anthropic**, and **Udemy**
 -  BS Computer Science from **FAST-NUCES** (CGPA 3.37 / 4.00)
 
 ---
@@ -43,7 +44,8 @@ Delivered projects across E-commerce, Healthcare, Retail, and AI research.
 
 **Features**
 
-- Single-page application with 8 sections (Hero, About, Skills, Experience, Projects, Education, Certifications, Contact)
+- Single-page portfolio with 13 content sections, including Services and Recommendations
+- Eight primary navigation links, with Services and Recommendations linked from About
 - IntersectionObserver-driven fade-in animations on scroll
 - Fully responsive across mobile, tablet, desktop
 - Dark theme with glass-morphism &amp; gradient accents
@@ -59,12 +61,14 @@ Delivered projects across E-commerce, Healthcare, Retail, and AI research.
 Portfolio/
 ├── index.html                  # Single-page portfolio
 ├── README.md                   # This file
+├── CLAUDE.md                   # Repository development guidance
 ├── LICENSE                     # MIT license
 ├── .gitignore
 └── assets/
     ├── picture.png             # Profile photo
     ├── resume.pdf              # Downloadable resume
     ├── certificates/           # Certification images
+    │   ├── google-developer-profile.png
     │   └── micro1-data-engineer.jpg
     ├── companies/              # Employer logos
     │   ├── fiverr.png / .svg
@@ -112,7 +116,7 @@ npx serve .
 This repo is set up as a GitHub Pages site at
 [**zain-asif-dev.github.io**](https://zain-asif-dev.github.io).
 
-1. Push to the `master` (or `main`) branch of the `zain-asif-dev.github.io` repo.
+1. Push to the `master` branch of the `zain-asif-dev.github.io` repo.
 2. GitHub Pages auto-deploys from the root.
 3. No additional configuration needed.
 
@@ -126,12 +130,14 @@ This repo is set up as a GitHub Pages site at
 | **Companies Marquee** | Animated logos of past &amp; current companies |
 | **Impact Stats** | 4 key metrics (LLAMA accuracy, API speed, deployments, experience) |
 | **About** | Bio + location/experience/availability cards |
-| **Technical Skills** | 9 categories (Languages, Frameworks, Frontend, AI, DBs, AWS, Cloud, APIs, Soft Skills) |
-| **Work Experience** | 5 roles: Mercor, Turing, SuperAnnotate, Qbatch, Fiverr |
+| **Services** | 8 services covering development, testing, information management, and project management |
+| **Technical Skills** | 10 categories (Languages, Frameworks, Frontend, AI, DBs, AWS, Cloud, APIs, Engineering &amp; Quality, Soft Skills) |
+| **Work Experience** | 11 roles across 7 companies: Andela, Mercor, Turing, SuperAnnotate, Qbatch, Fiverr, KANNYTECH |
 | **Key Projects** | Featured: **Sales Support** + 6 additional projects |
 | **Tools &amp; Platforms** | Development, AI, Productivity tools |
-| **Education** | FAST-NUCES CS degree + coursework &amp; research |
-| **Certifications** | Featured micro1 cert + 3 LinkedIn Learning certs + Google Developer Program |
+| **Education** | FAST-NUCES CS degree + UCP pre-engineering, 15 courses, academic roles &amp; research |
+| **Certifications** | 17 credentials: 5 OpenAI, 7 Anthropic, 1 Udemy, 1 micro1, 3 GitHub/LinkedIn Learning; Google Developer Program shown separately |
+| **Recommendations** | 5 attributed, paraphrased LinkedIn recommendations with dates and a source link |
 | **Contact** | Email, phone, resume download, social icons |
 
 ---
@@ -180,3 +186,4 @@ If you do, a quick link back to this repo or a mention in your credits is apprec
 **Built with care by Zain Asif** &middot; © 2025
 
 </div>
+

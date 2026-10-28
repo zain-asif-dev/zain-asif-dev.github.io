@@ -593,7 +593,7 @@ tailwind.config = {
         I'm a full-stack engineer and AI engineer with deep expertise in
         <span class="text-indigo-300 font-medium">Python</span>,
         <span class="text-purple-300 font-medium">AI/ML</span>, and building
-        scalable software solutions. I've led projects spanning E-commerce, Healthcare, and Retail,
+        scalable software solutions. I've led projects spanning E-commerce, Healthcare, Retail, and HR technology,
         delivering complex systems like AI-powered Electronic Medical Records and Warehouse Management platforms.
       </p>
       <p class="mt-5">
@@ -606,6 +606,10 @@ tailwind.config = {
         software architectures and efficient database solutions. Recognized for leading projects end-to-end
         and working effectively across diverse, cross-functional teams.
       </p>
+      <div class="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-indigo-300">
+        <a href="#services" class="hover:text-white transition">Explore my services <i class="fa-solid fa-arrow-down text-xs ml-1" aria-hidden="true"></i></a>
+        <a href="#recommendations" class="hover:text-white transition">Read recommendations <i class="fa-solid fa-arrow-down text-xs ml-1" aria-hidden="true"></i></a>
+      </div>
     </div>
 
     <div class="space-y-4">
@@ -648,6 +652,27 @@ tailwind.config = {
   </div>
 </section>
 
+<!-- Services -->
+<section id="services" class="pb-24 fade-in">
+  <div class="mb-8">
+    <p class="section-label">How I Can Help</p>
+    <h2 class="text-3xl md:text-4xl font-black text-white mt-3">Services</h2>
+  </div>
+
+  <div class="glass rounded-3xl p-8">
+    <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-5 text-sm text-slate-300">
+      <li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo-400" aria-hidden="true"></i>Application Development</li>
+      <li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo-400" aria-hidden="true"></i>Custom Software Development</li>
+      <li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo-400" aria-hidden="true"></i>SaaS Development</li>
+      <li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo-400" aria-hidden="true"></i>Software Testing</li>
+      <li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo-400" aria-hidden="true"></i>Web Development</li>
+      <li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo-400" aria-hidden="true"></i>Database Development</li>
+      <li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo-400" aria-hidden="true"></i>Information Management</li>
+      <li class="flex items-center gap-3"><i class="fa-solid fa-check text-indigo-400" aria-hidden="true"></i>Project Management</li>
+    </ul>
+  </div>
+</section>
+
 <!-- ═══════════ SKILLS ═══════════ -->
 <section id="skills" class="pb-24 fade-in">
   <div class="mb-8">
@@ -674,6 +699,7 @@ tailwind.config = {
         <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/java-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Java</span>
         <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/cplusplus-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">C/C++</span>
         <span class="chip px-3 py-1.5 rounded-full">SQL</span>
+        <span class="chip px-3 py-1.5 rounded-full">C#</span>
       </div>
     </div>
 
@@ -691,6 +717,9 @@ tailwind.config = {
         <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/react-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">React.js</span>
         <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/rails-plain.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Ruby on Rails</span>
         <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/laravel-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Laravel</span>
+        <span class="chip px-3 py-1.5 rounded-full">FastAPI</span>
+        <span class="chip px-3 py-1.5 rounded-full">JavaFX</span>
+        <span class="chip px-3 py-1.5 rounded-full">Java Swing</span>
       </div>
     </div>
 
@@ -708,6 +737,7 @@ tailwind.config = {
           <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/bootstrap-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Bootstrap</span>
           <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/tailwindcss-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Tailwind</span>
           <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/figma-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Figma</span>
+          <span class="chip px-3 py-1.5 rounded-full">User Interface Design</span>
         </div>
       </div>
 
@@ -722,9 +752,10 @@ tailwind.config = {
           <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/postgresql-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">PostgreSQL</span>
           <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/mysql-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">MySQL</span>
           <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/microsoftsqlserver-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">SQL Server</span>
-          <span class="chip px-3 py-1.5 rounded-full">Database Design</span>
+          <span class="chip px-3 py-1.5 rounded-full">Database &amp; Schema Design</span>
           <span class="chip px-3 py-1.5 rounded-full flex items-center gap-2"><img src="./assets/tools/sequelize-original.svg" class="tool-logo-sm" loading="lazy" decoding="async" alt="">Sequelize</span>
           <span class="chip px-3 py-1.5 rounded-full">ActiveRecord</span>
+        <span class="chip px-3 py-1.5 rounded-full">pgAdmin</span>
         </div>
       </div>
     </div>
@@ -752,6 +783,14 @@ tailwind.config = {
         <span class="chip px-3 py-1.5 rounded-full">Agentic AI</span>
         <span class="chip px-3 py-1.5 rounded-full">Transformer Models</span>
         <span class="chip px-3 py-1.5 rounded-full">Mixture of Experts</span>
+        <span class="chip px-3 py-1.5 rounded-full">Machine Learning</span>
+        <span class="chip px-3 py-1.5 rounded-full">Supervised Learning</span>
+        <span class="chip px-3 py-1.5 rounded-full">LLM Evaluation</span>
+        <span class="chip px-3 py-1.5 rounded-full">Multimodal Prompting</span>
+        <span class="chip px-3 py-1.5 rounded-full">Prompt Flow</span>
+        <span class="chip px-3 py-1.5 rounded-full">Agent-based Modeling</span>
+        <span class="chip px-3 py-1.5 rounded-full">Data Analysis</span>
+        <span class="chip px-3 py-1.5 rounded-full">Regression Analysis</span>
       </div>
     </div>
 
@@ -779,6 +818,8 @@ tailwind.config = {
         <span class="chip px-3 py-1.5 rounded-full">ECR</span>
         <span class="chip px-3 py-1.5 rounded-full">CodePipeline</span>
         <span class="chip px-3 py-1.5 rounded-full">Secrets Manager</span>
+        <span class="chip px-3 py-1.5 rounded-full">AWS Batch</span>
+        <span class="chip px-3 py-1.5 rounded-full">AWS Amplify</span>
       </div>
     </div>
 
@@ -810,6 +851,9 @@ tailwind.config = {
       </h3>
       <div class="flex flex-wrap gap-2 text-sm">
         <span class="chip px-3 py-1.5 rounded-full">REST APIs</span>
+        <span class="chip px-3 py-1.5 rounded-full">GraphQL</span>
+        <span class="chip px-3 py-1.5 rounded-full">Google Maps API</span>
+        <span class="chip px-3 py-1.5 rounded-full">LocationIQ API</span>
         <span class="chip px-3 py-1.5 rounded-full">Google API</span>
         <span class="chip px-3 py-1.5 rounded-full">EasyPost API</span>
         <span class="chip px-3 py-1.5 rounded-full">SP API / MWS</span>
@@ -819,6 +863,28 @@ tailwind.config = {
         <span class="chip px-3 py-1.5 rounded-full">NMI API</span>
         <span class="chip px-3 py-1.5 rounded-full">Shopify</span>
         <span class="chip px-3 py-1.5 rounded-full">Walmart API</span>
+        <span class="chip px-3 py-1.5 rounded-full">Amazon Seller Central</span>
+      </div>
+    </div>
+
+    <div class="glass skill-card rounded-3xl p-7 md:col-span-2">
+      <h3 class="font-semibold text-white mb-5 flex items-center gap-3">
+        <span class="w-9 h-9 rounded-lg bg-teal-500/15 flex items-center justify-center">
+          <i class="fa-solid fa-code-branch text-teal-400 text-sm" aria-hidden="true"></i>
+        </span>
+        Engineering &amp; Quality
+      </h3>
+      <div class="flex flex-wrap gap-2 text-sm">
+        <span class="chip px-3 py-1.5 rounded-full">Software Architecture</span>
+        <span class="chip px-3 py-1.5 rounded-full">Object Oriented Design</span>
+        <span class="chip px-3 py-1.5 rounded-full">Software Infrastructure</span>
+        <span class="chip px-3 py-1.5 rounded-full">Code Review</span>
+        <span class="chip px-3 py-1.5 rounded-full">Debugging</span>
+        <span class="chip px-3 py-1.5 rounded-full">Troubleshooting</span>
+        <span class="chip px-3 py-1.5 rounded-full">Regression Testing</span>
+        <span class="chip px-3 py-1.5 rounded-full">Integration Testing</span>
+        <span class="chip px-3 py-1.5 rounded-full">Algorithms</span>
+        <span class="chip px-3 py-1.5 rounded-full">Web Scraping</span>
       </div>
     </div>
 
@@ -827,19 +893,18 @@ tailwind.config = {
         <span class="w-9 h-9 rounded-lg bg-rose-500/15 flex items-center justify-center">
           <i class="fa-solid fa-users text-rose-400 text-sm"></i>
         </span>
-        Soft Skills &amp; Leadership
+        Collaboration &amp; Leadership
       </h3>
       <div class="flex flex-wrap gap-2 text-sm">
         <span class="chip px-3 py-1.5 rounded-full">Team Leadership</span>
         <span class="chip px-3 py-1.5 rounded-full">Project Management</span>
         <span class="chip px-3 py-1.5 rounded-full">Problem Solving</span>
-        <span class="chip px-3 py-1.5 rounded-full">Code Review</span>
-        <span class="chip px-3 py-1.5 rounded-full">Debugging</span>
-        <span class="chip px-3 py-1.5 rounded-full">Software Architecture</span>
-        <span class="chip px-3 py-1.5 rounded-full">Web Scraping</span>
-        <span class="chip px-3 py-1.5 rounded-full">Algorithms</span>
         <span class="chip px-3 py-1.5 rounded-full">Client Communication</span>
-        <span class="chip px-3 py-1.5 rounded-full">Mentoring</span>
+        <span class="chip px-3 py-1.5 rounded-full">Business &amp; Client Requirements</span>
+        <span class="chip px-3 py-1.5 rounded-full">Analytical Skills</span>
+        <span class="chip px-3 py-1.5 rounded-full">Attention to Detail</span>
+        <span class="chip px-3 py-1.5 rounded-full">English</span>
+        <span class="chip px-3 py-1.5 rounded-full">Training &amp; Mentoring</span>
       </div>
     </div>
 
@@ -854,6 +919,21 @@ tailwind.config = {
   </div>
 
   <div class="space-y-6">
+
+    <!-- Andela -->
+    <div class="glass exp-card rounded-3xl p-8">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0 text-indigo-300 font-bold text-lg" aria-hidden="true">A</div>
+          <div>
+            <h3 class="text-xl font-bold text-white">Senior Software Engineer</h3>
+            <p class="text-indigo-400 font-semibold mt-0.5">Andela</p>
+            <p class="text-xs text-slate-500 mt-1">Full-time &middot; Remote</p>
+          </div>
+        </div>
+        <span class="text-xs text-slate-400 whitespace-nowrap font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 px-3 py-1.5 rounded-full">Sep 2024 &ndash; Present</span>
+      </div>
+    </div>
 
     <!-- Mercor -->
     <div class="glass exp-card rounded-3xl p-8">
@@ -888,6 +968,24 @@ tailwind.config = {
         <span class="chip px-2.5 py-1 rounded-full text-slate-400">DevOps</span>
         <span class="chip px-2.5 py-1 rounded-full text-slate-400">Claude Code</span>
       </div>
+
+      <div class="mt-8 pt-6 border-t border-white/10 space-y-6">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div>
+            <h4 class="text-lg font-semibold text-white">Code Agent Evaluator</h4>
+            <p class="text-xs text-slate-500 mt-1">Freelance &middot; Remote</p>
+          </div>
+          <span class="text-xs text-slate-400 whitespace-nowrap font-medium bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Sep 2025 &ndash; Aug 2026</span>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 pt-6 border-t border-white/5">
+          <div>
+            <h4 class="text-lg font-semibold text-white">Code Agent Reviewer</h4>
+            <p class="text-xs text-slate-500 mt-1">Contract &middot; Remote</p>
+          </div>
+          <span class="text-xs text-slate-400 whitespace-nowrap font-medium bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Jan 2026 &ndash; Jul 2026</span>
+        </div>
+      </div>
     </div>
 
     <!-- Turing -->
@@ -920,6 +1018,27 @@ tailwind.config = {
         <span class="chip px-2.5 py-1 rounded-full text-slate-400">PostgreSQL</span>
         <span class="chip px-2.5 py-1 rounded-full text-slate-400">GCP</span>
         <span class="chip px-2.5 py-1 rounded-full text-slate-400">DevOps</span>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/10 space-y-6">
+        <div>
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+            <div>
+              <h4 class="text-lg font-semibold text-white">Senior Quality Assurance Engineer Lead</h4>
+              <p class="text-xs text-slate-500 mt-1">Contract &middot; Remote</p>
+            </div>
+            <span class="text-xs text-slate-400 whitespace-nowrap font-medium bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Nov 2024 &ndash; Apr 2026</span>
+          </div>
+          <p class="mt-4 text-sm text-slate-300 leading-relaxed">Reviewed agentic and agentless workflows used to train large language models.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 pt-6 border-t border-white/5">
+          <div>
+            <h4 class="text-lg font-semibold text-white">Software Engineer</h4>
+            <p class="text-xs text-slate-500 mt-1">Contract &middot; Remote</p>
+          </div>
+          <span class="text-xs text-slate-400 whitespace-nowrap font-medium bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Sep 2024 &ndash; Nov 2024</span>
+        </div>
       </div>
     </div>
 
@@ -1003,7 +1122,7 @@ tailwind.config = {
       </div>
 
       <ul class="space-y-2.5 text-sm text-slate-300 leading-relaxed">
-        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-xs timeline-bullet"></i><span>Delivered projects ranging from small-scale scripts and scrapers to large-scale systems including Password Management Systems, LMS, and EMR</span></li>
+        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-xs timeline-bullet"></i><span>Delivered projects ranging from small-scale scripts, scrapers, and ciphers to large-scale systems including Password Management Systems, LMS, and EMR</span></li>
         <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-xs timeline-bullet"></i><span>Handled full deployments and CI/CD pipelines across diverse technology stacks</span></li>
         <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-xs timeline-bullet"></i><span>Served clients globally across multiple industries and project sizes</span></li>
       </ul>
@@ -1016,6 +1135,22 @@ tailwind.config = {
         <span class="chip px-2.5 py-1 rounded-full text-slate-400">C/C++</span>
         <span class="chip px-2.5 py-1 rounded-full text-slate-400">JavaScript</span>
         <span class="chip px-2.5 py-1 rounded-full text-slate-400">PHP</span>
+      </div>
+    </div>
+
+
+    <!-- KANNYTECH -->
+    <div class="glass exp-card rounded-3xl p-8">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/15 border border-purple-400/20 flex items-center justify-center flex-shrink-0 text-purple-300 font-bold text-lg" aria-hidden="true">K</div>
+          <div>
+            <h3 class="text-xl font-bold text-white">Intern</h3>
+            <p class="text-indigo-400 font-semibold mt-0.5">KANNYTECH</p>
+            <p class="text-xs text-slate-500 mt-1">Internship &middot; Faisalabad</p>
+          </div>
+        </div>
+        <span class="text-xs text-slate-400 whitespace-nowrap font-medium bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">May 2018 &ndash; Aug 2018</span>
       </div>
     </div>
 
@@ -1300,8 +1435,8 @@ tailwind.config = {
         AI Platforms
       </h3>
       <div class="space-y-4 text-sm">
-        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/anthropic.svg" alt="Anthropic" style="filter: invert(1)">Claude / Anthropic</div>
-        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/openai.svg" alt="OpenAI" style="filter: invert(1)">OpenAI / ChatGPT</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/anthropic.svg" alt="Anthropic" style="filter: invert(1)">Claude / Claude Code / Anthropic</div>
+        <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/openai.svg" alt="OpenAI" style="filter: invert(1)">OpenAI / ChatGPT / Codex</div>
         <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/googlegemini.svg" alt="Google Gemini" style="filter: invert(1)">Google Gemini</div>
         <div class="flex items-center gap-3"><img class="tool-logo" loading="lazy" decoding="async" src="./assets/tools/huggingface.svg" alt="Hugging Face">Hugging Face</div>
       </div>
@@ -1365,19 +1500,39 @@ tailwind.config = {
     <div class="mt-6 pt-5 border-t border-white/5">
       <p class="text-xs text-slate-500 uppercase tracking-wider mb-4 font-semibold">Relevant Coursework</p>
       <div class="flex flex-wrap gap-2 text-xs">
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Applied Machine Learning</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Artificial Intelligence</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Data Structures</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Design &amp; Analysis of Algorithms</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Introduction to Cloud Computing</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Software Engineering</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Software Testing</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Object Oriented Analysis &amp; Design</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Web Programming</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Discrete Structures</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Computer Programming</span>
-        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Remote Sensing &amp; GIS</span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Applied Machine Learning <span class="text-slate-500">&middot; CS4104</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Artificial Intelligence <span class="text-slate-500">&middot; CS401</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Data Structures <span class="text-slate-500">&middot; CS201</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Design &amp; Analysis of Algorithms <span class="text-slate-500">&middot; CS302</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Introduction to Cloud Computing <span class="text-slate-500">&middot; CS499</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Software Engineering <span class="text-slate-500">&middot; CS303</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Software Testing <span class="text-slate-500">&middot; CS497</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Object Oriented Analysis &amp; Design <span class="text-slate-500">&middot; CS309</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Web Programming <span class="text-slate-500">&middot; CS406</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Discrete Structures <span class="text-slate-500">&middot; CS211</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Computer Programming <span class="text-slate-500">&middot; CS103</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Remote Sensing &amp; GIS <span class="text-slate-500">&middot; CS413</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Computer Programming Lab <span class="text-slate-500">&middot; CL103</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Introduction to Computing <span class="text-slate-500">&middot; CS101</span></span>
+        <span class="chip px-2.5 py-1 rounded-full text-slate-400">Introduction to Computing Lab <span class="text-slate-500">&middot; CL101</span></span>
       </div>
+    </div>
+  </div>
+
+  <!-- University Of Central Punjab -->
+  <div class="glass exp-card rounded-3xl p-8 mt-6">
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+      <div class="flex items-start gap-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-500/25" aria-hidden="true">
+          <i class="fa-solid fa-graduation-cap text-white text-lg"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white">Faculty in Sciences, Pre-Engineering</h3>
+          <p class="text-indigo-400 font-semibold mt-0.5">University Of Central Punjab</p>
+          <p class="text-xs text-slate-500 mt-1.5">Grade <span class="text-slate-300 font-semibold">A+</span></p>
+        </div>
+      </div>
+      <span class="text-xs text-slate-400 whitespace-nowrap font-medium bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Aug 2015 &ndash; Jun 2017</span>
     </div>
   </div>
 </section>
@@ -1387,6 +1542,301 @@ tailwind.config = {
   <div class="mb-8">
     <p class="section-label">Continuous Learning</p>
     <h2 class="text-3xl md:text-4xl font-black text-white mt-3">Licenses &amp; Certifications</h2>
+  </div>
+
+  <!-- OpenAI, Anthropic, and Udemy credentials -->
+  <div class="mb-10">
+    <div class="mt-8" aria-labelledby="certifications-openai">
+      <div class="flex items-center gap-3 mb-4">
+        <h3 id="certifications-openai" class="text-xl font-bold text-white">OpenAI</h3>
+        <span class="chip px-2.5 py-1 rounded-full text-xs text-slate-400">5 credentials</span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="https://oaipartnernetwork.credential.net/d6c531a8-baa1-4d38-baee-6b7c63d41caf" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-certificate text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">OpenAI Consultative Solutions Practitioner</h4>
+              <p class="text-xs text-indigo-400 mt-1">OpenAI</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-10">Oct 2026</time></p>
+            <p>Expires <time datetime="2027-10">Oct 2027</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">198480796</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://oaipartnernetwork.credential.net/41945206-19d5-4eb1-a59a-9a0553cccfbc" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-certificate text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">OpenAI Technical Practitioner</h4>
+              <p class="text-xs text-indigo-400 mt-1">OpenAI</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-10">Oct 2026</time></p>
+            <p>Expires <time datetime="2027-10">Oct 2027</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">198480797</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://oaipartnernetwork.credential.net/c052f66a-1a29-4eea-a0a4-6c961ca07578" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-certificate text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">Codex Deployment Practitioner</h4>
+              <p class="text-xs text-indigo-400 mt-1">OpenAI</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-10">Oct 2026</time></p>
+            <p>Expires <time datetime="2027-10">Oct 2027</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">197853300</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://oaipartnernetwork.credential.net/250d2b55-7925-487c-b4e0-bd0af860d1a9" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-certificate text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">OpenAI Cyber Deployment Practitioner</h4>
+              <p class="text-xs text-indigo-400 mt-1">OpenAI</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-10">Oct 2026</time></p>
+            <p>Expires <time datetime="2027-10">Oct 2027</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">197482117</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://oaipartnernetwork.credential.net/54e6d723-1cdd-4f9f-b007-f619ca8f3929" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-certificate text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">API Deployment Practitioner</h4>
+              <p class="text-xs text-indigo-400 mt-1">OpenAI</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-10">Oct 2026</time></p>
+            <p>Expires <time datetime="2027-10">Oct 2027</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">197350483</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-8" aria-labelledby="certifications-anthropic">
+      <div class="flex items-center gap-3 mb-4">
+        <h3 id="certifications-anthropic" class="text-xl font-bold text-white">Anthropic</h3>
+        <span class="chip px-2.5 py-1 rounded-full text-xs text-slate-400">7 credentials</span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="https://verify.skilljar.com/c/rieigniighee" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-brain text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">AI Fluency: Framework &amp; Foundations</h4>
+              <p class="text-xs text-indigo-400 mt-1">Anthropic</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-07">Jul 2026</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">rieigniighee</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://verify.skilljar.com/c/zy9jct8ywxnf" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-brain text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">AI Fluency for Builders</h4>
+              <p class="text-xs text-indigo-400 mt-1">Anthropic</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-07">Jul 2026</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">zy9jct8ywxnf</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://verify.skilljar.com/c/6uts3fukbirf" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-brain text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">Claude Code 101</h4>
+              <p class="text-xs text-indigo-400 mt-1">Anthropic</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-07">Jul 2026</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">6uts3fukbirf</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://verify.skilljar.com/c/u9eq454khsr5" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-brain text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">Claude Code in Action</h4>
+              <p class="text-xs text-indigo-400 mt-1">Anthropic</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-07">Jul 2026</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">u9eq454khsr5</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://verify.skilljar.com/c/246nna3v6smr" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-brain text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">Claude Platform 101</h4>
+              <p class="text-xs text-indigo-400 mt-1">Anthropic</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-07">Jul 2026</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">246nna3v6smr</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://verify.skilljar.com/c/jp5m3z4q5pvt" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-brain text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">Introduction to Claude Cowork</h4>
+              <p class="text-xs text-indigo-400 mt-1">Anthropic</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-07">Jul 2026</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">jp5m3z4q5pvt</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+        <a href="https://verify.skilljar.com/c/p4ahykm53xid" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-brain text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">Claude 101</h4>
+              <p class="text-xs text-indigo-400 mt-1">Anthropic</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-07">Jul 2026</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">p4ahykm53xid</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-8" aria-labelledby="certifications-udemy">
+      <div class="flex items-center gap-3 mb-4">
+        <h3 id="certifications-udemy" class="text-xl font-bold text-white">Udemy</h3>
+        <span class="chip px-2.5 py-1 rounded-full text-xs text-slate-400">1 credential</span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="https://www.udemy.com/certificate/UC-0e0d2980-ece4-461b-b862-05c8da7b13b1/" target="_blank" rel="noopener noreferrer"
+           class="glass project-card rounded-3xl p-6 flex flex-col">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 border border-indigo-400/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-graduation-cap text-indigo-300 text-lg" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-bold text-white text-sm leading-snug">Codex - The Practical Guide</h4>
+              <p class="text-xs text-indigo-400 mt-1">Udemy</p>
+            </div>
+          </div>
+          <div class="space-y-1 text-xs text-slate-400">
+            <p>Issued <time datetime="2026-09">Sep 2026</time></p>
+          </div>
+          <p class="mt-3 text-[11px] leading-relaxed text-slate-500 break-all">Credential ID: <span class="font-mono">UC-0e0d2980-ece4-461b-b862-05c8da7b13b1</span></p>
+          <div class="mt-auto pt-5 text-xs text-indigo-400 font-semibold">
+            View credential <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-0.5" aria-hidden="true"></i>
+            <span class="sr-only">(opens in a new tab)</span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 
   <!-- Featured certificate (micro1) -->
@@ -1544,6 +1994,57 @@ tailwind.config = {
              alt="Google Developer Program profile showing earned badges">
       </div>
     </a>
+  </div>
+</section>
+
+<!-- Recommendations -->
+<section id="recommendations" class="pb-24 fade-in">
+  <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+    <div>
+      <p class="section-label">People I've Worked With</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mt-3">Recommendations</h2>
+      <p class="mt-3 text-sm text-slate-400">Summaries of recommendations received on LinkedIn.</p>
+    </div>
+    <a href="https://www.linkedin.com/in/zain-asif-dev/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-300 hover:text-white transition">
+      Read on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <article class="glass rounded-3xl p-8">
+      <h3 class="text-lg font-bold text-white">Emincan Yilmaz</h3>
+      <p class="text-sm text-indigo-300 mt-1">Senior AI Engineer at Turing</p>
+      <p class="text-xs text-slate-500 mt-2">Managed Zain directly &middot; <time datetime="2026-06-03">June 3, 2026</time></p>
+      <p class="mt-5 text-sm text-slate-300 leading-relaxed">Recognizes Zain's work ethic, enthusiasm, commitment, and teamwork, describing contributions that exceeded expectations.</p>
+    </article>
+
+    <article class="glass rounded-3xl p-8">
+      <h3 class="text-lg font-bold text-white">Ahmed Nadeem</h3>
+      <p class="text-sm text-indigo-300 mt-1">Software Engineer</p>
+      <p class="text-xs text-slate-500 mt-2">Reported directly to Zain &middot; <time datetime="2026-05-11">May 11, 2026</time></p>
+      <p class="mt-5 text-sm text-slate-300 leading-relaxed">Describes Zain's mentorship at Qbatch and ability to design, own, and deliver reliable SaaS products through backend engineering and team leadership.</p>
+    </article>
+
+    <article class="glass rounded-3xl p-8">
+      <h3 class="text-lg font-bold text-white">Absar Ahmed Bhutta</h3>
+      <p class="text-sm text-indigo-300 mt-1">Python Developer</p>
+      <p class="text-xs text-slate-500 mt-2">Teammate &middot; <time datetime="2026-05-05">May 5, 2026</time></p>
+      <p class="mt-5 text-sm text-slate-300 leading-relaxed">Highlights Zain's excellent software engineering skills.</p>
+    </article>
+
+    <article class="glass rounded-3xl p-8">
+      <h3 class="text-lg font-bold text-white">Sharjeel Mukhtar</h3>
+      <p class="text-sm text-indigo-300 mt-1">Senior Full Stack Engineer</p>
+      <p class="text-xs text-slate-500 mt-2">Reported directly to Zain &middot; <time datetime="2026-04-30">April 30, 2026</time></p>
+      <p class="mt-5 text-sm text-slate-300 leading-relaxed">Praises clean code, dependable delivery, quick learning, clear communication, calm leadership, and supportive mentorship.</p>
+    </article>
+
+    <article class="glass rounded-3xl p-8 md:col-span-2">
+      <h3 class="text-lg font-bold text-white">Muhammad Abubakar</h3>
+      <p class="text-sm text-indigo-300 mt-1">Python / AI Expert</p>
+      <p class="text-xs text-slate-500 mt-2">Teammate &middot; <time datetime="2026-04-30">April 30, 2026</time></p>
+      <p class="mt-5 text-sm text-slate-300 leading-relaxed">Highlights Python, JavaScript, agentic AI, machine learning, automation, generative AI, and AWS experience, alongside practical problem-solving, quick learning, and teamwork.</p>
+    </article>
   </div>
 </section>
 
@@ -1729,3 +2230,4 @@ tailwind.config = {
 
 </body>
 </html>
+
